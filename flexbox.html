@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        height: 1000px;
+        width: 1000px;
+        border: 5px solid khaki;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .box {
+        /* height: 300px; */
+        width: 200px;
+        border: 3px dotted khaki;
+        background-color: lightcoral;
+        font-size: 3em;
+    }
+    
+    #box-1 {
+        order: 2;
+    }
+    
+    #box-2 {
+        flex-grow: 1;
+        background-color: aqua
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">BOX-2</div>
+
+    </div>
+
+</body>
+
+</html>
